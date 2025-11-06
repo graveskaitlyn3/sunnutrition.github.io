@@ -1,0 +1,219 @@
+html {
+	overflow-x: hidden
+}
+
+
+body {
+	background-image: url('/Users/kaitlyngraves/Documents/Sunshine Website/IMG_1877.jpg');/*sunrise.jpg*/
+	background-size: cover;
+}
+
+.top-menu nav {
+  display: flex;
+  gap: 10px; /* Optional: adds space between buttons */
+  justify-content: center; /* Optional: centers the menu */
+  flex-wrap: nowrap; /* Prevents wrapping to a second line */
+}
+
+.top-menu form {
+  margin: 0;
+}
+
+.top-menu button {
+	background: none;
+	border: none;
+	font-family: 'Oswald';
+}
+
+.top-menu nav form {
+  border-right: 1px solid black; /* Divider line */
+  padding-right: 10px;           /* Space between line and button */
+  margin-right: 10px;            /* Space between forms */
+}
+
+.top-menu nav form:last-child {
+  border-right: none; /* Remove line after last button */
+}
+
+
+.title-section{
+	margin: 0 39%;
+	text-align: center;
+	width: 300px;
+	font-family: 'Chiron Sung HK';
+
+}
+
+
+.what-title {
+	text-align: center;
+	font-family: 'Oswald';
+}
+
+.what-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.what-text {
+  font-family: 'Roboto Condensed';
+}
+
+.what-text p {
+  display: inline-block;
+  background-color: #FF6B6B;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+.what-img {
+	padding-left: 100px;
+}
+
+.who-title {
+	text-align: center;
+	font-family: 'Oswald';
+  padding-top: 10px;
+}
+
+/*.who-section{
+	display: flex;
+	/*margin-right: 100px;*
+	gap: 100px;
+}*/
+.who-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center; /* ✅ Vertically centers both columns */
+}
+
+
+.who-img {
+  justify-self: end; /* ✅ Aligns image to the right within its grid cell */
+  padding-right: 100px;
+}
+
+
+.who-text {
+  padding-left: 30px;
+  font-family: 'Roboto Condensed';
+}
+
+.who-text p {
+  display: inline-block;
+  background-color: #FFA07A;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+
+li {
+	list-style: none;
+	display: inline;
+}
+
+.contact-section {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;     /* ✅ Centers the text */
+  padding-left: 0;        /* ❌ Remove this to avoid pushing content */
+  padding: 20px 0;        /* Optional: adds vertical spacing */
+  font-family: 'Roboto Condensed'; /* Optional: match your typography */
+}
+
+.contact-section p {
+  display: inline-block;
+  background-color: #B2DFDB;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+.socials {
+  display: flex;
+  gap: 10px; /* Optional: spacing between icons */
+  justify-content: center; /* Optional: center alignment */
+  align-items: center; /* Vertically align icons */
+  margin-top: 20px; /* Optional: spacing from above content */
+  margin-right: 20px;
+}
+
+.socials img {
+  display: block;
+}
+
+/*#FF6B6B
+#FFA07A
+#B2DFDB*/
+
+@media (max-width: 768px) {
+  html, body {
+    text-align: center;
+  }
+
+  body {
+    background-size: cover;
+background-position: top center;
+  }
+
+  .top-menu nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .top-menu nav form {
+    border-right: none;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .title-section {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .who-title {
+    padding-top: 290px;
+  }
+
+  .what-section,
+  .who-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 20px;
+    justify-items: center;
+  }
+
+  .what-img,
+  .who-img,
+  .what-text,
+  .who-text {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .who-img {
+    margin-top: 10px;
+  }
+
+  .contact-section {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .socials {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 0;
+  }
+}
+
+

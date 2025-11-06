@@ -1,0 +1,165 @@
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+
+body {
+	background-image: url('/Users/kaitlyngraves/Documents/Sunshine Website/blue.jpg');/*sunrise.jpg*/
+	background-size: cover;
+}
+
+.top-menu nav {
+  display: flex;
+  gap: 10px; /* Optional: adds space between buttons */
+  justify-content: center; /* Optional: centers the menu */
+  flex-wrap: nowrap; /* Prevents wrapping to a second line */
+}
+
+.top-menu form {
+  margin: 0;
+}
+
+.top-menu button {
+  background: none;
+  border: none;
+  font-family: 'Oswald';
+  color: white;
+}
+
+.top-menu nav form {
+  border-right: 1px solid white; /* Divider line */
+  padding-right: 10px;           /* Space between line and button */
+  margin-right: 10px;            /* Space between forms */
+}
+
+.top-menu nav form:last-child {
+  border-right: none; /* Remove line after last button */
+}
+
+.teas-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.teas {
+  display: flex;
+  flex-direction: column;     /* Stack items vertically */
+  align-items: center;        /* Center horizontally */
+  gap: 40px;                  /* Space between each image block */
+  
+}
+
+.tea_imgs {
+  text-align: center;
+}
+
+.tea_imgs img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+
+.seasonal {
+  transform: rotate(-10deg); /* Tilt the div */
+  max-width: 300px;
+  background-color: #FFA07A; /* Optional: add color */
+  padding: 20px;
+  font-family: 'Oswald';
+  color: white;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2); /* Optional: add depth */
+  position: sticky;
+  top: 400px; /* Lower than default */
+  z-index: 10;
+  align-self: flex-start;
+}
+
+.shipping {
+  transform: rotate(10deg); /* Optional: tilt opposite direction */
+  max-width: 300px;
+  background-color: #FF6B6B;
+  padding: 20px;
+  font-family: 'Oswald';
+  color: white;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 400px; /* Lower than default */
+  z-index: 10;
+  align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+  .top-menu nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  .top-menu nav form {
+    border-right: none;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .top-menu button {
+    margin-bottom: 10px;
+  }
+
+  .teas-container,
+  .teas,
+  .tea_imgs {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .tea_imgs img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  .seasonal,
+  .shipping {
+    transform: none;
+    max-width: 100%;
+    width: 90%;
+    text-align: center;
+    position: static;
+    margin-top: 20px;
+    padding: 20px;
+    align-self: center;
+  }
+}
+
+
