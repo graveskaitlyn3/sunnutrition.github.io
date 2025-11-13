@@ -20,6 +20,7 @@ body {
 .top-menu {
   display: flex;
   justify-content: center; /* Center the entire menu */
+  margin-top: 20px;
   /*padding: 10px 0;*/
 }
 
