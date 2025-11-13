@@ -16,15 +16,28 @@ body {
 	background-size: cover;
 }
 
-.top-menu nav {
+.top-menu {
   display: flex;
-  gap: 10px; /* Optional: adds space between buttons */
-  justify-content: center; /* Optional: centers the menu */
-  flex-wrap: nowrap; /* Prevents wrapping to a second line */
+  justify-content: center;
+  padding: 20px 0; /* More vertical space */
 }
 
-.top-menu form {
+.top-menu nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0; /* Remove gap so dividers are flush */
+}
+
+.top-menu nav form {
   margin: 0;
+  padding: 0 16px; /* Horizontal padding around each button */
+  border-right: 1px solid white;
+}
+
+.top-menu nav form:last-child {
+  border-right: none;
 }
 
 .top-menu button {
@@ -32,16 +45,9 @@ body {
   border: none;
   font-family: 'Oswald';
   color: white;
-}
-
-.top-menu nav form {
-  border-right: 1px solid white; /* Divider line */
-  padding-right: 10px;           /* Space between line and button */
-  margin-right: 10px;            /* Space between forms */
-}
-
-.top-menu nav form:last-child {
-  border-right: none; /* Remove line after last button */
+  font-size: 1.2rem;
+  padding: 10px 0;
+  cursor: pointer;
 }
 
 .teas-container {
@@ -69,6 +75,7 @@ body {
   height: auto;
   max-width: 100%;
   display: block;
+  padding-bottom: 50px;
 }
 
 
@@ -113,22 +120,28 @@ body {
     box-sizing: inherit;
   }
 
-  .top-menu nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0 10px;
-    width: 100%;
-  }
+ .top-menu {
+  padding: 16px 0;
+}
 
-  .top-menu nav form {
-    border-right: none;
-    margin-right: 0;
-    padding-right: 0;
-  }
+.top-menu nav {
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 10px;
+}
 
-  .top-menu button {
-    margin-bottom: 10px;
-  }
+.top-menu nav form {
+  border-right: none;
+  padding: 10px;
+}
+
+.top-menu button {
+  font-size: 1.1rem;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+}
+
+
 
   .teas-container,
   .teas,
