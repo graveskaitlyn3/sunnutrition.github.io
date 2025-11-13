@@ -8,47 +8,53 @@ body {
 	background-size: cover;
 }
 
-.top-menu nav {
-  display: flex;
-  gap: 10px; /* Optional: adds space between buttons */
-  justify-content: center; /* Optional: centers the menu */
-  flex-wrap: nowrap; /* Prevents wrapping to a second line */
+.top-menu {
+  /*background-color: #B2DFDB; /* Match contact section */
+  /*padding: 5px 0;           /* Increase vertical space */
+  /*border-radius: 0 0 12px 12px; /* Rounded bottom corners */
+  text-align: center;
+  font-family: 'Roboto Condensed'; /* Match contact section font */
+  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
 }
 
-.top-menu form {
-  margin: 0;
+.top-menu nav {
+  display: flex;
+  gap: 20px; /* Slightly more spacing */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 .top-menu button {
-	background: none;
-	border: none;
-	font-family: 'Oswald';
-	color: black;
+  background-color: #B2DFDB; /* Turquoise like contact section */
+  border: none;
+  font-family: 'Roboto Condensed'; /* Match contact section font */
+  color: black;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 8px; /* Rounded corners */
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.top-menu nav form {
-  border-right: 1px solid black; /* Divider line */
-  padding-right: 10px;           /* Space between line and button */
-  margin-right: 10px;            /* Space between forms */
-}
-
-.top-menu nav form:last-child {
-  border-right: none; /* Remove line after last button */
+.top-menu button:hover {
+  background-color: #A0CCC9; /* Slightly darker on hover */
 }
 
 
 .title-section{
-	margin: 0 39%;
-	text-align: center;
-	width: 300px;
-	font-family: 'Chiron Sung HK';
+  margin: 0 39%;
+  text-align: center;
+  width: 300px;
+  font-family: 'Chiron Sung HK';
 
 }
 
 
 .what-title {
-	text-align: center;
-	font-family: 'Oswald';
+  text-align: center;
+  font-family: 'Oswald';
 }
 
 .what-section {
@@ -71,19 +77,18 @@ body {
 }
 
 .what-img {
-	padding-left: 100px;
+  padding-left: 100px;
 }
 
 .who-title {
-	text-align: center;
-	font-family: 'Oswald';
-  padding-top: 10px;
+  text-align: center;
+  font-family: 'Oswald';
 }
 
 /*.who-section{
-	display: flex;
-	/*margin-right: 100px;*
-	gap: 100px;
+  display: flex;
+  /*margin-right: 100px;*
+  gap: 100px;
 }*/
 .who-section {
   display: grid;
@@ -114,8 +119,8 @@ body {
 
 
 li {
-	list-style: none;
-	display: inline;
+  list-style: none;
+  display: inline;
 }
 
 .contact-section {
@@ -164,16 +169,40 @@ li {
 background-position: top center;
   }
 
-  .top-menu nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+  .top-menu {
+  /*background-color: #B2DFDB; /* Match contact section */
+  /*padding: 5px 0;           /* Increase vertical space */
+  /*border-radius: 0 0 12px 12px; /* Rounded bottom corners */
+  text-align: center;
+  font-family: 'Roboto Condensed'; /* Match contact section font */
+  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
 
-  .top-menu nav form {
-    border-right: none;
-    margin-right: 0;
-    padding-right: 0;
-  }
+.top-menu nav {
+  display: flex;
+  gap: 20px; /* Slightly more spacing */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.top-menu button {
+  background-color: #B2DFDB; /* Turquoise like contact section */
+  border: none;
+  font-family: 'Roboto Condensed'; /* Match contact section font */
+  color: black;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 8px; /* Rounded corners */
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.top-menu button:hover {
+  background-color: #A0CCC9; /* Slightly darker on hover */
+}
+
 
   .title-section {
     margin: 0 auto;
