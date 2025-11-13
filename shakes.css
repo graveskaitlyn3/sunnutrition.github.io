@@ -17,33 +17,40 @@ body {
 }
 
 
+.top-menu {
+  display: flex;
+  justify-content: center; /* Center the entire menu */
+  /*padding: 10px 0;*/
+}
+
 .top-menu nav {
   display: flex;
-  gap: 10px; /* Optional: adds space between buttons */
-  justify-content: center; /* Optional: centers the menu */
-  flex-wrap: nowrap; /* Prevents wrapping to a second line */
-}
-
-.top-menu form {
-  margin: 0;
-}
-
-.top-menu button {
-	background: none;
-	border: none;
-	font-family: 'Oswald';
-  color: white;
+  flex-direction: row; /* Ensure buttons stay in one row */
+  justify-content: center;
+  align-items: center;
+  gap: 0; /* Remove gap so divider lines are flush */
 }
 
 .top-menu nav form {
-  border-right: 1px solid white; /* Divider line */
-  padding-right: 10px;           /* Space between line and button */
-  margin-right: 10px;            /* Space between forms */
+  margin: 0;
+  padding: 0 16px; /* Horizontal padding around each button */
+  border-right: 1px solid white;
 }
 
 .top-menu nav form:last-child {
-  border-right: none; /* Remove line after last button */
+  border-right: none;
 }
+
+.top-menu button {
+  background: none;
+  border: none;
+  font-family: 'Oswald';
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
 
 .shakes {
   display: flex;
@@ -60,6 +67,7 @@ body {
   max-width: 100%;
   height: auto;
   display: block;
+  padding-bottom: 50px;
 }
 
 .shakes_waffles {
@@ -143,8 +151,7 @@ body {
 
   .top-menu nav form {
     border-right: none;
-    margin-right: 0;
-    padding-right: 0;
+    padding: 10px;
   }
 
   .shakes_waffles {
