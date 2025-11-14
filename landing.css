@@ -44,17 +44,18 @@ body {
 
 
 .title-section{
-  margin: 0 39%;
+  margin: 0 auto;
   text-align: center;
-  width: 300px;
+  width: fit-content;
   font-family: 'Chiron Sung HK';
-
 }
 
 
 .what-title {
   text-align: center;
   font-family: 'Oswald';
+  margin: 0 auto;
+  width: fit-content;
 }
 
 .what-section {
@@ -83,6 +84,8 @@ body {
 .who-title {
   text-align: center;
   font-family: 'Oswald';
+  margin: 0 auto;
+  width: fit-content;
 }
 
 /*.who-section{
